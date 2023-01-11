@@ -1,0 +1,20 @@
+is an information-gathering tool. This free and open-source tool is designed to
+extract all the metadata information from public documents available on websites. This
+tool uses two libraries to extract data. These are Hachoir and PdfMiner. After extracting
+all the data, this tool will generate a report which contains usernames, software versions,
+and servers or machine names that will help Penetration testers in the informationgathering phase. This tool can also extract MAC addresses from Microsoft office
+documents. This tool can give information about the hardware of the system by which
+they generated the report of the tool.
+====
+Step 1: Open your kali Linux operating system and install the tool using the following
+command.
+==git clone https://github.com/laramies/metagoofil.git
+==cd metagoofil
+Step 2: Now use the following command to run the tool.
+==python2 metagoofil.py
+The tool is running successfully. Now we will see some examples of using the tool.
+Example 1: Use the metagoofil tool to extract PDFs from a website.
+==python2 metagoofil.py -d flipkart.com -l 100 -n 5 -t pdf -o newflipkart
+In this way, you can extract PDFsf and information on files from a website.
+Example 2: Use the metagoofil tool to extract pdf from a website.
+==python2 metagoofil.py -d microsoft.com -l 20 -f all -o micro.html -t micro-files
