@@ -1,0 +1,4 @@
+UAC, or User Account Control, is a security feature of Windows that works by limiting what a standard user can do until
+an administrator authorizes a temporary increase of privileges.this feature helps to keep malware at bay by only allowing 
+applications to run with higher privileges on an as-needed basis.
+
