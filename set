@@ -1,0 +1,27 @@
+6. Social engineering attack demonstration using SET toolkit
+Aim: to demonstrate social engineering attack using SET toolkit
+Theory: The Social-Engineer Toolkit (SET) is specifically designed to perform advanced
+attacks against the human element. SET was designed to be released with the
+https://www.social-engineer.org launch and has quickly become a standard tool in a
+penetration testers' arsenal. The attacks built into the toolkit are designed to be targeted
+and focused attacks against a person or organization used during a penetration test.
+Procedure:
+Step 1
+Set connectivity between kali Linux and windows victim machine
+check your IP address(Kali Linux)
+Step 2
+check all the machines inside the network
+Command: Netdiscover –r 192.168.243.0/24
+Ping the IP (unknown )to check whether host is live or not:
+Command: Ping 192.168.243.129
+Step 3
+Now open social engineering framework in kali Linux
+Command: Setoolkit
+Click the first option: 1 social engineering attacks
+Now since we have to perform the website cloning so we have to chose the option
+2) Website Attack Vectors
+Then click on 5) Web Jacking Attack Method
+Then on 2) Site Cloner
+After this it will ask you for an ip address (put your kali linux machine ip address). After
+this it will ask you to enter the URL of the website you want to clone. In this let's clone the
+facebook website.
