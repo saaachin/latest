@@ -1,11 +1,13 @@
 The WhatWeb scanner
 -------------------
-The WhatWeb tool is used to identify different web technologies used by the website.
- It is included in Kali Linux, and it can be accessed by going to 
-Applications | 03 - Web Application Analysis | Web Vulnerability scanners. It identifies the different content management systems, statistic/analytics
- packages, and JavaScript libraries used to design the web application. The tool claims to have over 900 plugins. It can be run at different aggression
- levels that balance speed and reliability.
- The tool may get enough information on a single web page to identify the website, or it may recursively  query the website to identify the technologies used.
+Whatweb is a free and open-source tool available on GitHub. Whatweb is a
+scanner written in the Ruby language. This tool can identify and recognize all the web
+technologies available on the target website. This tool can identify technologies used by
+websites such as blogging, content management system, all JavaScript libraries.
+Whatweb contains more than 180 modules. each module is responsible for grabbing
+particular information from the target website. Whatweb works as an informationgathering tool and can identify all the email addresses, SQL errors, technology used in
+the website.
+
 
 
 Cd Desktop
