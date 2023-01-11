@@ -1,0 +1,39 @@
+2. Port scanning using nmap
+Aim: To perform port scanning in nmap and getting familier with the same.
+Theory: namp is a leading software tool for network scanning. It is an information
+gathering tool, it scans devices and network to collect the information about open
+ports,the operating system that the device running on, and their version etc.
+Procedure :
+Step 1
+==Nmap ip address
+The nmap command allows scanning a system in various ways. In this we are
+performing a scan using the hostname as "www.xxxxxxYXXX. PK" and IP address
+"172.217.27.174", to find all open ports, services, and MAC addresses on the system.
+Step 2
+==nmap -v www.xxXX. COm
+It is used to get more detailed information about the remote machines.
+Step 3
+==nmap ip address1 ip address2..
+To scan multiple hosts
+Step 4
+==nmap 103.76.228.*
+To scan whole subnet. We can scan a whole subnet or IP range with Nmap by providing
+* with it. It will scan a whole subnet and give the information about those hosts which
+are Up in the Network
+Step 5
+==sudo nmap -sA ip address
+To scan to detect firewall settings.
+Step 6
+==sudo nmap -sL ip address
+To identify Hostnames
+Step 7
+==nmap -A <Domain Name»
+Here-A Indicates Aggressive it will let Us Know The Extra Information's like OS
+Detection (-O), version detection, script scanning (-sC), and traceroute (- traceroute)
+even it provides a lot of valuable information About The Host.
+Step 8
+==nmap -0 <Domain Name>
+Here It Will Display The Operating System Where The Domain or Ip Address is Running
+But Will Not Display Exact Operating System Available On Computer. It Will Only
+Display The Chance of Operating System Available in The Computer. This Will Just
+Guess the Running Operating System (OS) in the Host
