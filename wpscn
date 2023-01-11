@@ -1,0 +1,15 @@
+A WPScan tool is a useful tool for identifying vulnerabilities in WordPress websites. By
+regularly scanning sites for vulnerabilities, it is possible to identify and fix potential
+security issues before malicious actors can exploit them.
+WPScan is a free, for non-commercial use, black box WordPress vulnerability scanner written for security professionals and blog maintainers to test the security of their sites.
+sudo apt-get update
+sudo apt-get install wpscan
+==
+Once the installation is complete, you can use the WPScan tool by entering the
+following command
+Step 5: wpscan --url [URL]
+==
+Replace [URL] with the URL of the WordPress website that you want to scan for
+vulnerabilities. For example, to scan the OpenAI website, you would enter
+==
+Step 6: wpscan --url https://openai.com
